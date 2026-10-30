@@ -30,3 +30,8 @@ The still poster is also used when the viewer requests reduced motion.
 encoded without audio and with the MP4 index at the start for progressive playback.
 It retains the moving section from 4.5 to 13.5 seconds, trimming the long still holds.
 The scene image stays visible independently until the video has a decoded frame.
+
+For startup, the page uses `glass-island-loop-start.mp4`, a smaller 960×540 H.264
+derivative with the same nine-second edit. Its first-frame JPEG is embedded in
+the HTML so the scene appears without a separate image request. The wordmark's
+font stylesheet loads without blocking the page or video discovery.
